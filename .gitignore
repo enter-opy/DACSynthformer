@@ -7,3 +7,5 @@ tfer/
 3.*
 private/
 deleteme/
+/mydata/wavs
+output.wav

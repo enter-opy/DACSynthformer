@@ -2,8 +2,11 @@ experiment: "2025.02.19_ROPE_mask86layers4fexp4"
 #testsnd: "" # pistons, wind, applause, bees, chirp, toks, peep
 
 # for docker:
-data_dir: "/scratch/syntexnew/dacdata7/train_sm"
-validator_data_dir: "/scratch/syntexnew/dacdata7/val"
+#data_dir: "/scratch/syntexnew/dacdata7/train_sm"
+#validator_data_dir: "/scratch/syntexnew/dacdata7/val"
+
+data_dir: "mydata/dac-train"
+data_frames: "mydata/dac-train.xlsx"
 
 #data_dir: "/home/lonce/scratchdata/syntexnew/dacdata7/train_sm"
 #validator_data_dir: "/home/lonce/scratchdata/syntexnew/dacdata7/val"
@@ -17,7 +20,7 @@ cond_params: 1 #1 (not counting the classes)
 model_size: 512 # must be divisible by num_heads
 
 Ti: 86 # 172 #86
-Tt: 430 # must match the length of the sequences in the batch
+Tt: 295 # must match the length of the sequences in the batch
 batch_size: 8  #**
 
 
