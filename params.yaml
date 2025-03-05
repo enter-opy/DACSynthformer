@@ -17,7 +17,7 @@ vocab_size: 1024
 num_tokens: 4
 
 cond_params: 1 #1 (not counting the classes)
-model_size: 512 # must be divisible by num_heads
+model_size: 1024 # must be divisible by num_heads
 
 Ti: 86 # 172 #86
 Tt: 295 # must match the length of the sequences in the batch
@@ -25,12 +25,12 @@ batch_size: 8  #**
 
 
 num_layers: 4 #**
-num_heads: 8 # 8 # embed_size must be divisible by num_heads
+num_heads: 16 # 8 # embed_size must be divisible by num_heads
 forward_expansion: 4 # 4 #4
 dropout_rate: 0.2
 learning_rate: 0.0005
 
-num_epochs: 250 ### 800 
+num_epochs: 1000 ### 800 
 
 ErrorLogRate: 10 ### 10
 checkpoint_interval: 25 ###50 # 25
